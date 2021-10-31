@@ -21,12 +21,12 @@
 
             Dim ret = New NavBarViewModel()
 
-            ret.Items.Add(New NavItem() With {.Code = "LA", .Description = "Ledger accounting", .CommandUrl = "LA", .ItemType = "G"})
+            ret.Items.Add(New NavItem() With {.Code = "LA", .Description = "Ledger accounting", .CommandUrl = "LA", .ItemType = ""})
 
             ret.Items.Add(New NavItem() With {.Code = "NA", .Description = "Name and Address", .CommandUrl = "NA", .ItemType = "", .GroupCode = "LA"})
             ret.Items.Add(New NavItem() With {.Code = "CA", .Description = "Chart of Accounts", .CommandUrl = "CA", .ItemType = "", .GroupCode = "LA"})
 
-            ret.Items.Add(New NavItem() With {.Code = "CRM", .Description = "Customer Relationship management", .CommandUrl = "CRM", .ItemType = "G"})
+            ret.Items.Add(New NavItem() With {.Code = "CRM", .Description = "Customer Relationship management", .CommandUrl = "CRM", .ItemType = ""})
             ret.Items.Add(New NavItem() With {.Code = "CUS", .Description = "Customer record", .CommandUrl = "CUS", .ItemType = "", .GroupCode = "CRM"})
 
             Return ret

@@ -29,6 +29,11 @@ Namespace Views
 
             LoadItems()
 
+
+
+
+
+
         End Function
 
         Private Sub SetAppearance()
@@ -118,6 +123,14 @@ Namespace Views
             If node IsNot Nothing Then
                 _vm.LaunchCmd(node.GetCommandUrl)
             End If
+        End Sub
+
+        Private Sub InitializeComponent()
+            CType(Me, System.ComponentModel.ISupportInitialize).BeginInit()
+            Me.SuspendLayout()
+            CType(Me, System.ComponentModel.ISupportInitialize).EndInit()
+            Me.ResumeLayout(False)
+
         End Sub
 
         'Private Sub NavBarUC_SelectedLinkChanged(sender As Object, e As NavBarSelectedLinkChangedEventArgs) Handles Me.SelectedLinkChanged
